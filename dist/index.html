@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My To-Do List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-blue-100 min-h-screen flex items-center justify-center p-6">
+
+  <div class="max-w-3xl w-full p-8">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6">
+      <div>
+        <h1 class="text-3xl font-bold text-gray-900">My To-Do List</h1>
+        <p class="text-gray-600 mt-1">Stay organized and productive</p>
+      </div>
+      <button id="themeToggle" class="text-gray-600 hover:text-gray-900 text-xl" title="Toggle Dark Mode">
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+
+    <!-- Task Counters -->
+    <div class="grid grid-cols-2 gap-6 mb-8">
+      <div class="bg-white rounded-lg shadow p-5 flex flex-col items-center">
+        <span id="activeCount" class="text-3xl font-bold text-blue-600">0</span>
+        <span class="text-gray-600 mt-1">Active Tasks</span>
+      </div>
+      <div class="bg-white rounded-lg shadow p-5 flex flex-col items-center">
+        <span id="completedCount" class="text-3xl font-bold text-green-600">0</span>
+        <span class="text-gray-600 mt-1">Completed</span>
+      </div>
+    </div>
+
+    <!-- Task Manager -->
+    <div class="bg-white rounded-lg shadow p-6">
+      <h2 class="font-semibold text-lg flex items-center mb-4">
+        <i class="fas fa-check-circle text-blue-600 mr-2"></i> Task Manager
+      </h2>
+      <form id="taskForm" class="flex gap-3 mb-5">
+        <input id="taskInput" type="text" placeholder="Add a new task..." class="flex-grow border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button type="submit" class="bg-gray-900 text-white px-6 rounded hover:bg-blue-700 transition">Add Task</button>
+      </form>
+
+      <!-- Filters -->
+      <div class="flex gap-4 mb-4">
+        <button data-filter="all" class="filter-btn bg-gray-900 text-white px-4 py-1 rounded">All (0)</button>
+        <button data-filter="active" class="filter-btn bg-gray-200 text-gray-700 px-4 py-1 rounded hover:bg-gray-300">Active (0)</button>
+        <button data-filter="completed" class="filter-btn bg-gray-200 text-gray-700 px-4 py-1 rounded hover:bg-gray-300">Completed (0)</button>
+      </div>
+
+      <!-- Task List -->
+      <ul id="taskList" class="min-h-[120px] text-gray-700">
+        <li class="text-center text-gray-500 italic">No tasks yet. Add one above!</li>
+      </ul>
+    </div>
+  </div>
+  <script src="../script.js"></script>
+</body>
+</html>

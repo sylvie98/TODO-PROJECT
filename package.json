@@ -1,0 +1,23 @@
+{
+  "name": "todo-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylvie98/TODO-PROJECT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sylvie98/TODO-PROJECT/issues"
+  },
+  "homepage": "https://github.com/sylvie98/TODO-PROJECT#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
