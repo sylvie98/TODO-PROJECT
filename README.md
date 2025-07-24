@@ -1,9 +1,10 @@
 # TODO-PROJECT
-built using :
+# built using :
 -Html
 -Tailwind css
 -Javascript
-Feautures:
+
+# Feautures:
 - Add new tasks
 - View All / Active / Completed tasks with dynamic counters
 - Mark tasks as completed or active
